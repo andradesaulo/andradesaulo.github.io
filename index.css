@@ -1,0 +1,19 @@
+h1,
+h2,
+p{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+h1,h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+body{
+    background-color: #012352fd;
+}
+.secao{
+    background-color: #3860fbff;
+    margin: 1rem;
+    padding: 1rem;
+}
