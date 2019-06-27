@@ -16,10 +16,27 @@ h1{
     left: -1rem;
     top: -1rem;
 }
-.secao{
+.section{
     box-sizing:  border-box;
     background-color: #3860fbff;
     margin: 2rem;
     padding: 1rem;
     position: relative;
+}
+
+.learning-block__title{
+    color: #012352fd;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.section-what-i-like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section-what-i-like__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
