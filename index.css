@@ -1,5 +1,5 @@
 body{
-    background-color: #012352fd;
+    background-color: #414141;
     color: white;
     font-family: 'Source Code Pro', monospace;
 }
@@ -9,7 +9,8 @@ h1,h2{
 h1{
     text-transform: uppercase;
     display: inline-block;
-    background-color: #ff6bf6ff;
+    color: #1ed96c;
+    background-color: #1c1c1c;
     font-size: 2rem;
     line-height: 1.5rem;
     position: absolute;
@@ -18,14 +19,74 @@ h1{
 }
 .section{
     box-sizing:  border-box;
-    background-color: #3860fbff;
+    background-color: #1c1c1c;
     margin: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
 }
+.section-interests{
+    text-transform: uppercase;
+    color: #1ed96c;
+    font-weight: bold;
+}
 
+.section-interests__prog-logic{
+    display: inline-block;
+}
+
+.section-skills__items * {
+    border-radius: .3rem;
+    padding: .5rem;
+    color: #1c1c1c;
+    margin-top: 1rem;
+}
+
+.section-skills__prog-logic{
+    background: linear-gradient(90deg, #1ed96c 66%, white 66%);
+    margin-top: 0;
+}
+
+.section-skills__py{
+    background: linear-gradient(90deg, #1ed96c 50%, white 50%);
+}
+
+.section-skills__js{
+    background: linear-gradient(90deg, #1ed96c 34%, white 34%);
+}
+
+.section-skills__html{
+    background: linear-gradient(90deg, #1ed96c 24%, white 24%);
+}
+
+.section-skills__git{
+    background: linear-gradient(90deg, #1ed96c 36%, white 36%);
+}
+
+.section-skills__linux{
+    background: linear-gradient(90deg, #1ed96c 46%, white 46%);
+}
+
+.section-skills__en{
+    background: linear-gradient(90deg, #1ed96c 42%, white 42%);
+}
+
+.section-skills__java{
+    background: linear-gradient(90deg, #1ed96c 27%, white 27%);
+}
+
+.section-skills__sql{
+    background: linear-gradient(90deg, #1ed96c 20%, white 20%);
+}
+
+.section-skills__ 
+div.learning-block:first-of-type{
+    margin-top: 0rem;
+}
+.learning-block{
+    margin-top: 2rem;
+}
 .learning-block__title{
-    color: #012352fd;
+    color: #1ed96c;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
