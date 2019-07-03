@@ -10,14 +10,14 @@ h1,h2{
     font-weight: bold;
 }
 h1{
-    text-transform: uppercase;
-    display: inline-block;
-    color: #1ed96c;
     background-color: #1c1c1c;
+    color: #1ed96c;
+    display: inline-block;
     font-size: 2rem;
+    left: -1rem;
     line-height: 1.5rem;
     position: absolute;
-    left: -1rem;
+    text-transform: uppercase;
     top: -1rem;
 }
 a {
@@ -29,28 +29,52 @@ a:hover {
     color: #414141;
 }
 .section{
-    box-sizing:  border-box;
     background-color: #1c1c1c;
+    box-sizing:  border-box;
     margin: 2rem;
     padding: 2rem;
     position: relative;
 }
+
+.section-photo{
+    background-color: transparent;
+    padding: 0;
+}
+.section-photo__photo{
+    width: 100%;
+}
+.section-photo__title-surname{
+    bottom: 0;
+    font-size: 2.5rem;
+    left: initial;
+    line-height: 1.7rem;
+    right: 0;
+    top: initial;
+}
+.section-photo__title-first-name{
+    bottom: 1.7rem;
+    font-size: 2.5rem;
+    left: initial;
+    line-height: 1.7rem;
+    right: 0;
+    top: initial;
+}
 .section-interests{
-    text-transform: uppercase;
     color: #1ed96c;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .section-interests__items *{
-    display: inline-block;
     background-color: #414141;
+    display: inline-block;
 }
 
 .section-skills__items * {
     border-radius: .3rem;
-    padding: .5rem;
     color: #1c1c1c;
     margin-top: 1rem;
+    padding: .5rem;
 }
 
 .section-skills__prog-logic{
@@ -91,7 +115,7 @@ a:hover {
 }
 
 div.learning-block:first-of-type{
-    margin-top: 0rem;
+    margin-top: 0;
 }
 .learning-block{
     margin-top: 2rem;
@@ -107,10 +131,10 @@ div.learning-block:first-of-type{
     justify-content: space-around;
 }
 .section-what-i-like__row{
+    align-items: baseline;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: baseline;
     text-align: center;
 }
 div.section-what-i-like__row:first-of-type{
