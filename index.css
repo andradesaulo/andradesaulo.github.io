@@ -20,6 +20,14 @@ h1{
     left: -1rem;
     top: -1rem;
 }
+a {
+    color: #1ed96c;
+    word-wrap: break-word;
+}
+
+a:hover {
+    color: #414141;
+}
 .section{
     box-sizing:  border-box;
     background-color: #1c1c1c;
@@ -33,8 +41,9 @@ h1{
     font-weight: bold;
 }
 
-.section-interests__prog-logic{
+.section-interests__items *{
     display: inline-block;
+    background-color: #414141;
 }
 
 .section-skills__items * {
@@ -81,7 +90,6 @@ h1{
     background: linear-gradient(90deg, #1ed96c 20%, white 20%);
 }
 
-.section-skills__ 
 div.learning-block:first-of-type{
     margin-top: 0rem;
 }
@@ -93,14 +101,18 @@ div.learning-block:first-of-type{
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
-
 .section-what-i-like{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.section-what-i-like__column{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.section-what-i-like__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+}
+div.section-what-i-like__row:first-of-type{
+    margin-bottom: 1rem;
 }
