@@ -4,6 +4,7 @@ html{
 body{
     background-color: #414141;
     color: white;
+    background-image: url("foto.png");
     font-family: 'Source Code Pro', monospace;
 }
 h1,h2{
@@ -27,6 +28,12 @@ a {
 
 a:hover {
     color: #414141;
+}
+@media(min-width: 355px){
+    body{
+        display: flex;
+        flex-direction: row;
+    }
 }
 .section{
     background-color: #1c1c1c;
