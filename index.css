@@ -92,11 +92,14 @@ div.learning-block:first-of-type{
 
 .section-skills__items * {
     border-radius: .3rem;
-    color: #1c1c1c;
+    color: #1ed96c;
     margin-top: 1rem;
     padding: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+/*
 .section-skills__en{
     background: linear-gradient(90deg, #1ed96c 42%, white 42%);
 }
@@ -133,7 +136,7 @@ div.learning-block:first-of-type{
 .section-skills__sql{
     background: linear-gradient(90deg, #1ed96c 20%, white 20%);
 }
-
+*/
 .section-what-i-like{
     display: flex;
     flex-direction: column;
@@ -183,7 +186,12 @@ div.section-what-i-like__row:first-of-type{
         max-width: 800px;
     }
     
+    .section-skills {
+        padding: 2rem 5em;
+    }
+    
     .section-skills__items{
+        font-size: 1.2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
