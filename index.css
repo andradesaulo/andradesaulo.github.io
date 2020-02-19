@@ -1,23 +1,23 @@
 a {
-    color: #1ed96c;
+    color: #fcfff7;
     word-wrap: break-word;
 }
 
 a:hover {
-    color: #414141;
+    color: #ffe900;
 }
 
 body {
-    background-color: #414141;
+    background-color: #046865;
     background-image: url("background.png");
-    color: white;
+    color: #fcfff7;
     font-family: 'Source Code Pro', monospace;
     padding: 2rem 1rem 0 1rem;
 }
 
 h1 {
-    background-color: #1c1c1c;
-    color: #1ed96c;
+    background-color: #e53d00;
+    color: #fcfff7;
     display: inline-block;
     font-size: 2rem;
     left: -1rem;
@@ -44,13 +44,13 @@ div.learning-block:first-of-type{
 }
 
 .learning-block__title{
-    color: #1ed96c;
+    color: #fcfff7;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
 .section {
-    background-color: #1c1c1c;
+    background-color: #e53d00;
     box-sizing:  border-box;
     margin: 0 1rem 2rem 1rem;
     padding: 2rem;
@@ -58,7 +58,7 @@ div.learning-block:first-of-type{
 }
 
 .section-interests{
-    color: #1ed96c;
+    color: #e53d00;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -92,51 +92,13 @@ div.learning-block:first-of-type{
 
 .section-skills__items * {
     border-radius: .3rem;
-    color: #1ed96c;
+    color: #fcfff7;
     margin-top: 1rem;
     padding: .5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/*
-.section-skills__en{
-    background: linear-gradient(90deg, #1ed96c 42%, white 42%);
-}
-
-.section-skills__git{
-    background: linear-gradient(90deg, #1ed96c 36%, white 36%);
-}
-
-.section-skills__html{
-    background: linear-gradient(90deg, #1ed96c 24%, white 24%);
-}
-
-.section-skills__java{
-    background: linear-gradient(90deg, #1ed96c 27%, white 27%);
-}
-
-.section-skills__js{
-    background: linear-gradient(90deg, #1ed96c 34%, white 34%);
-}
-
-.section-skills__linux{
-    background: linear-gradient(90deg, #1ed96c 46%, white 46%);
-}
-
-.section-skills__prog-logic{
-    background: linear-gradient(90deg, #1ed96c 66%, white 66%);
-    margin-top: 0;
-}
-
-.section-skills__py{
-    background: linear-gradient(90deg, #1ed96c 50%, white 50%);
-}
-
-.section-skills__sql{
-    background: linear-gradient(90deg, #1ed96c 20%, white 20%);
-}
-*/
 .section-what-i-like{
     display: flex;
     flex-direction: column;
