@@ -1,23 +1,35 @@
 a {
-    color: #fcfff7;
+    background-color: #fff;
+    color: #6a2c70;
+    font-weight: bold;
     word-wrap: break-word;
 }
 
 a:hover {
-    color: #ffe900;
+    color: #f9ed69;
 }
 
 body {
-    background-color: #046865;
-    background-image: url("background.png");
-    color: #fcfff7;
+    background-color: #f08a5d;
+    color: #fff;
     font-family: 'Source Code Pro', monospace;
     padding: 2rem 1rem 0 1rem;
 }
 
+body::after{
+    content: "";
+  background: url(background.png);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
 h1 {
-    background-color: #e53d00;
-    color: #fcfff7;
+    background-color: #b83b5e;
+    color: #f9ed69;
     display: inline-block;
     font-size: 2rem;
     left: -1rem;
@@ -44,27 +56,30 @@ div.learning-block:first-of-type{
 }
 
 .learning-block__title{
-    color: #fcfff7;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
 .section {
-    background-color: #e53d00;
+    background-color: #6a2c70;
     box-sizing:  border-box;
     margin: 0 1rem 2rem 1rem;
     padding: 2rem;
     position: relative;
 }
 
+.section_contact{
+    line-height: 2rem;
+}
+
 .section-interests{
-    color: #e53d00;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .section-interests__items *{
-    background-color: #414141;
+    background-color: #fff;
+    color: #6a2c70;
     display: inline-block;
 }
 
@@ -92,7 +107,7 @@ div.learning-block:first-of-type{
 
 .section-skills__items * {
     border-radius: .3rem;
-    color: #fcfff7;
+    color: #fff2e5;
     margin-top: 1rem;
     padding: .5rem;
     font-weight: bold;
