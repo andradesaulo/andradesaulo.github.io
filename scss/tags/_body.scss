@@ -1,0 +1,48 @@
+@use "../utils/colors";
+@use "../utils/media-queries";
+
+body {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: colors.$pink;
+    color: colors.$purple;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: .75em;
+    
+    @media (min-width: 375px) {
+        font-size: 1em;
+    }
+
+    @media (min-width: 750px) {
+        font-size: 2em;
+    }
+
+    @media (min-aspect-ratio: media-queries.$min-aspect) {
+        font-size: .4em;
+
+        @media (min-width: 375px) {
+            font-size: .7em;
+        }
+    
+        @media (min-width: 750px) {
+            font-size: 1em;
+        } 
+
+        @media (min-width: 1500px) {
+            font-size: 1.3em;
+        } 
+
+        @media (min-width: 2000px) {
+            font-size: 1.5em;
+        } 
+
+        @media (min-width: 2500px) {
+            font-size: 1.8em;
+        } 
+    }
+
+}
+

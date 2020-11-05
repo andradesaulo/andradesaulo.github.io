@@ -1,0 +1,114 @@
+@use "../utils/colors";
+@use "../utils/border-props";
+@use "../utils/media-queries";
+
+.project {
+    position: relative;
+    @include border-props.border();
+    height: 6em;
+    width: 70%;
+    transition: height 1s;
+    
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__p {
+        display: none;
+    }
+     
+    &__title {
+        padding-bottom: .25em;
+    }
+    
+    &__img {
+        object-fit: cover;
+        display: flex;
+        height: 0;
+        width: 100%;
+        transform-origin: top;
+        transition: height 1s;
+    }
+    
+    &__description {
+        height: 100%;
+        padding: 3em 1em 1em 1em;
+        transition: padding 1s;
+    }
+    
+    &[opened] {
+        height: 25em;   
+        background-color: colors.$purple;
+    }
+
+    &[opened] &__p {
+        display: inline-block;
+        font-weight: 500;
+        padding-left: 10%;
+    }
+    
+    &[opened] &__img {
+        height: 50%;
+        transform-origin: top;
+        transition: height 1s;
+    }
+    
+    &[opened] &__description {
+        height: 100%;
+        padding: 1em;
+        color: colors.$pink;
+    }
+    
+    &__link[opened] {
+        text-decoration: none;
+    }
+
+    &[opened] &__opener {
+        color: colors.$pink;
+        transform: rotate(45deg);
+        transition: transform 1s;
+    }
+}
+
+@media (min-aspect-ratio: media-queries.$min-aspect) {
+    .project {
+        display: flex;
+        width: 50%;
+        transition: width 1s, height 1s;
+        @include border-props.border();
+        
+        &__img {
+            width: 0;
+            transition: width 1s;
+        }
+        
+        &__description {
+        height: 100%;
+        padding: 3em 1em 1em 1em;
+        transition: padding 1s;
+    }
+
+        $pseudo-class: hover;
+        &[opened] {
+            width: 90%;
+            transition: width 1s, height 1s;
+        }
+    
+        &[opened] &__p {
+            font-size: 1.5em;
+        }
+        
+        &[opened] &__img {
+            height: 100%;
+            width: 50%;
+            transition: width 1s;
+        }
+        
+        &[opened] &__description {
+            width: 50%;
+            padding: 1.7em;
+            color: colors.$pink;
+            transition: padding 1s;
+        }
+    }
+}

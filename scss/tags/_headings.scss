@@ -1,0 +1,26 @@
+@use "../utils/media-queries";
+
+h1 {
+    font-size: 3.5em;
+    @media (min-aspect-ratio: media-queries.$min-aspect) {
+        font-size: 6em;
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+    @media (min-aspect-ratio: media-queries.$min-aspect) {
+        font-size: 4em;
+    }
+}
+
+h3 {
+    font-size: 1.7em;
+    @media (min-aspect-ratio: media-queries.$min-aspect) {
+        font-size: 2.1em;
+    }
+
+    &::first-letter {
+        text-transform: lowercase;
+    }
+}

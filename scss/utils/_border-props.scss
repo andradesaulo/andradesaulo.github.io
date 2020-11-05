@@ -1,0 +1,23 @@
+@use "../utils/colors";
+
+$border-width: 2px;
+@mixin border($type: normal) {
+    $props: 2px solid colors.$purple;
+    @if $type == normal {
+        border: $props;
+    } @else if $type == top {
+        border-top: $props;
+    } @else if $type == left {
+        border-left: $props;
+    } @else if $type == right {
+        border-right: $props;
+    } @else if $type == bottom {
+        border-bottom: $props;
+    } @else if $type == color {
+        border-color: colors.$purple;
+    } @else if $type == width {
+        border-width: $border-width;
+    } @else {
+        border: none;
+    }
+}

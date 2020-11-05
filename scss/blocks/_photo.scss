@@ -1,0 +1,6 @@
+@use "../utils/border-props";
+
+.photo {
+    display: inline-block;
+    @include border-props.border();
+}

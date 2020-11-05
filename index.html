@@ -2,134 +2,138 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <main>
-            <div class="group-about-me">
-                <div class="group-about-me__column">
-                    <section class="section section-photo">
-                        <img class="section-photo__photo" src="profile_photo.jpg" alt="Um homem de óculos e cabelo castanho sorrindo">
-                        <h1 class="section-photo__title-first-name">Saulo</h1>
-                        <h1 class="section-photo__title-surname">Andrade</h1>
-                    </section>
-                </div>
-                <div class="group-about-me__column">
-                    <section class="section">
-                        <h1>About me</h1>
-                        <p>Hello! I'm 22 years old and I'm a software engineering student. I'm a very calm and patient person who likes to solve challenges and carefully listens what people have to say.</p>
-                    </section>
-                    <section class="section">
-                        <h1>What I like</h1>
-                        <ul class="section-what-i-like">
-                            <div class="section-what-i-like__row">
-                                <li>
-                                    <img src="origami.svg" alt="">
-                                    <p>origami</p>
-                                </li>
-                                <li>
-                                    <img src="games.svg" alt="">
-                                    <p>games</p>
-                                </li>
-                            </div>
-                            <div class="section-what-i-like__row">
-                                <li>
-                                    <img src="movies.svg" alt="">
-                                    <p>movies</p>
-                                </li>
-                                <li>
-                                    <img src="puzzles.svg" alt="">
-                                    <p>puzzles</p>
-                                </li>
-                            </div>
-                        </ul>
-                    </section>
-                </div>
+        <main class="page">
+            <div class="section section-title page__section">
+                <h1 class="title section-title__title">
+                    <span class="title__name">Saulo<br>Andrade</span>
+                    <span class="title__description">web developer</span>
+                </h1>
             </div>
-            <section class="section">
-                <h1>Experience</h1>
-                <div class="learning-block-list">
-                    <div class="learning-block">
-                        <img src="certificate.svg" alt="">
-                        <h2 class="learning-block__title">High School Diploma</h2>
-                        <p>2013-2015</p>
-                        <span>-</span>
-                        <p>"Escola Estadual de Ibiraci"</p>
-                        <span>-</span>
-                        <p><address>Ibiraci, MG, BR</address></p>
-                    </div>
-                    <div class="learning-block">
-                        <img src="book.svg" alt="">
-                        <h2 class="learning-block__title">Software Engineering Course</h2>
-                        <p>2018-In progress</p>
-                        <span>-</span>
-                        <p>"Uni-FACEF"</p>
-                        <span>-</span>
-                        <p><address>Franca, SP, BR</address></p>
-                    </div>
-                    <div class="learning-block">
-                        <img src="book.svg" alt="">
-                        <h2 class="learning-block__title">Office Clerk</h2>
-                        <p>2016-2019</p>
-                        <span>-</span>
-                        <p>Family Business</p>
-                        <span>-</span>
-                        <p><address>Ibiraci, MG, BR</address></p>
-                    </div>
-                    <div class="learning-block">
-                        <img src="certificate.svg" alt="">
-                        <h2 class="learning-block__title">Python Extension Course</h2>
-                        <p>July 2018</p>
-                        <span>-</span>
-                        <p>"Uni-FACEF"</p>
-                        <span>-</span>
-                        <p><address>Franca, SP, BR</address></p>
-                    </div>
-                    <div class="learning-block">
-                        <img src="certificate.svg" alt="">
-                        <h2 class="learning-block__title">Oracle Database Course - Database Design and Programming with SQL</h2>
-                        <p>July 2019</p>
-                        <span>-</span>
-                        <p>"Uni-FACEF"</p>
-                        <span>-</span>
-                        <p><address>Franca, SP, BR</address></p>
+            <section class="section section-experience page__section">
+                <hr class="section__line">
+                <h2 class="section__title">Experience</h2>
+                <div class="section__main section-experience__table">
+                    <table class="table">
+                        <thead>
+                            <tr class="table__row table__row--head">
+                                <th class="table__col-1 table__col-1--header"><span class="table__header">name</span></th>
+                                <th class="table__col-2 table__col-2--header"><span class="table__header">year</span></th>
+                                <th class="table__col-3 table__col-3--header"><span class="table__header">organisation</span></th>
+                                <th class="table__col-4 table__col-4--header"><span class="table__header">location</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table__row">
+                                <td class="table__cell table__col-1">High School Diploma</td>
+                                <td class="table__cell table__col-2">2013-2015</td>
+                                <td class="table__cell table__col-3">Escola Estadual de Ibiraci</td>
+                                <td class="table__cell table__col-4"><adress>Ibiraci, MG, BR</adress></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__col-1">Software Engineering Course</td>
+                                <td class="table__cell table__col-2">2018-Today</td>
+                                <td class="table__cell table__col-3">"Uni-FACEF"</td>
+                                <td class="table__cell table__col-4">
+                                    <address>Franca, SP, BR</address>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__col-1">Office Clerk</td>
+                                <td class="table__cell table__col-2">2016-2019</td>
+                                <td class="table__cell table__col-3">Family Business</td>
+                                <td class="table__cell table__col-4"><address>Ibiraci, MG, BR</address></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__col-1">Python Extension Course</td>
+                                <td class="table__cell table__col-2">July 2018</td>
+                                <td class="table__cell table__col-3">"Uni-FACEF"</td>
+                                <td class="table__cell table__col-4"><address>Franca, SP, BR</address></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__col-1">Oracle Database Course - Database Design and Programming with SQL</td>
+                                <td class="table__cell table__col-2">July 2019</td>
+                                <td class="table__cell table__col-3">"Uni-FACEF"</td>
+                                <td class="table__cell table__col-4"><address>Franca, SP, BR</address></td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section> 
+            <section class="section section-skills page__section">
+                <hr class="section__line">
+                <h2 class="section__title">Skills</h2>
+                <ul class="section-skills__skill-list section__main">
+                    <li class="section-skills__each-skill">html</li>
+                    <li class="section-skills__each-skill">css</li>
+                    <li class="section-skills__each-skill section-skills__each-skill--double">programming logic</li>
+                    <li class="section-skills__each-skill">javascript</li>
+                    <li class="section-skills__each-skill">python</li>
+                    <li class="section-skills__each-skill">git</li>
+                    <li class="section-skills__each-skill">gnu/linux</li>
+                    <li class="section-skills__each-skill">react</li>
+                    <li class="section-skills__each-skill">sql</li>
+                    <li class="section-skills__each-skill">english</li>
+                    <li class="section-skills__each-skill">unity</li>
+                </ul>
+            </section>
+            <section class="section section-projects page__section page__section-project">
+                <hr class="section__line">
+                <h2 class="section__title">Projects</h2>
+                <div class="project section__main" onclick="toggleAttribute('opened')">
+                    <img src="./minesweeper_project.png" class="project__img">
+                    <div class="project__description">
+                        <h3 class="project__title">Minesweeper</h3>
+                        <p class="project__p">This is a classic game I made using React JS. You can play it <a class="project__link" href="https://minesweeper.andradesaulo.vercel.app">here</a>.</p>
                     </div>
                 </div>
             </section>
-            <section class="section section-interests">
-                <h1>Interests</h1>
-                <ul class="section-interests__items">
+            <section class="section section-about-me page__section">
+                <hr class="section__line">
+                <h2 class="section__title">About me</h2>
+                <div class="section__main section-about-me__content">
+                    <div class="text-block section-about-me__text-block ">
+                        <h3 class="text-block__title">Who am I?</h3>
+                        <p class="text-block__block">Hello! I'm 23 years old and I'm a software engineering student. I'm a very calm and patient person who likes to solve challenges and carefully listens what people have to say.</p>
+                    </div>
+                    <img src="profile_photo.jpg" alt="" class="photo section-about-me__photo">
+                </div>
+                <!-- 
+                <ul>
                     <li>Front-End</li>
                     <li>Game Development</li>
                     <li>Computer Graphics</li>
                     <li>Databases</li>
-                </ul>
+                </ul> -->
             </section>
-            <section class="section section-skills">
-                <h1>Skills</h1>
-                <ul class="section-skills__items">
-                    <li class="section-skills__prog-logic">programming logic</li>
-                    <li class="section-skills__py">python</li>
-                    <li class="section-skills__js">javascript</li>
-                    <li class="section-skills__react">react</li>
-                    <li class="section-skills__html">html + css</li>
-                    <li class="section-skills__git">git</li>
-                    <li class="section-skills__linux">gnu/linux</li>
-                    <li class="section-skills__en">english</li>
-                    <li class="section-skills__sql">sql</li>
-                    <li class="section-skills__unity">unity + c#</li>
-                </ul>
-            </section>
-            <section class="section section_contact">
-                <h1>Contact</h1>
-                <p>Phone number: <a href="tel:+5535999914616">+55 (35) 99991-4616</a></p>
-                <p>Email: <a href="mailto:sauloandrade0809@gmail.com">sauloandrade0809@gmail.com</a></p>
-                <p>Github: <a href="https://github.com/andradesaulo">https://github.com/andradesaulo</a></p>
-            </section>
+            <footer class="section section-contact page__section page__section-contact">
+                <h2 class="section__title">Contact</h2>
+                <div class="section-contact__content section__main">
+                    <h3>Phone number:</h3>
+                    <p class="section-contact__data"><a href="tel:+5535999914616">+55 (35) 99991-4616</a></p>
+                    <h3>Email:</h3>
+                    <p class="section-contact__data"><a href="mailto:sauloandrade0809@gmail.com">sauloandrade<wbr>0809@<wbr>gmail.com</a></p>
+                    <h3>Github:</h3>
+                    <p class="section-contact__data"><a href="https://github.com/andradesaulo">https://github.com/<wbr>andrade<wbr>saulo</a></p>
+                </div>
+                <span class="section-contact__developedby">Developed by me</span>
+            </footer>     
         </main>
     </body>
 </html>
-
+<!-- 
+<section>
+    <h1>What I like</h1>
+    <ul>
+        <li>origami</li>
+        <li>games</li>
+        <li>movies</li>
+        <li>puzzles</li>
+    </ul>
+</section> -->

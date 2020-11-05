@@ -1,0 +1,20 @@
+@use "../utils/colors";
+@use "../utils/border-props";
+
+.title {
+    display: flex;
+    flex-direction: column;
+    
+    &__name {
+        margin-bottom: 5vh;
+    }
+
+    &__description {
+        font-size: 0.35em;
+        align-self: flex-end;
+        @include border-props.border;
+        padding: 1em;
+        text-align: center;
+        width: 65%;
+    } 
+}

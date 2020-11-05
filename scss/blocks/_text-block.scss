@@ -1,0 +1,23 @@
+@use "../utils/media-queries";
+@use "../utils/border-props";
+@use "../utils/colors";
+
+.text-block {
+    padding: 1.7em;
+    @include border-props.border();
+    min-width: 40%;
+    color: colors.$purple;
+    
+    &__title {
+        padding-bottom: 2.5vh;
+    }
+
+    &__block {
+        font-size: 1.2em;
+        font-weight: 500;
+        @media (min-aspect-ratio: media-queries.$min-aspect) {
+            font-size: 1.5em;
+            padding-left: 10%;
+        }
+    }
+}

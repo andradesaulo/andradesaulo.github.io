@@ -1,0 +1,24 @@
+@use "../utils/media-queries";
+
+.page {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    @media (min-aspect-ratio: media-queries.$min-aspect) {
+        flex-direction: row;
+    }
+    
+    &__section {
+        margin: 0 auto 15vh;
+        @media (min-aspect-ratio: media-queries.$min-aspect) {
+            margin: unset;
+            margin-right: 15vw;
+        }
+    }
+
+    &__section-contact {
+        margin-bottom: 0;
+    }
+}
