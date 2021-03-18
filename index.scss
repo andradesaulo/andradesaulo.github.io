@@ -8,3 +8,21 @@
 @use "./scss/blocks/table";
 @use "./scss/blocks/text-block";
 @use "./scss/blocks/title";
+@use "./scss/utils/colors";
+
+* {
+    scrollbar-color: colors.$purple transparent;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: colors.$purple;
+}
