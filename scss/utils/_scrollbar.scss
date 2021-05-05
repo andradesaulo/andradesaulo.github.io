@@ -1,0 +1,18 @@
+@use "../utils/colors";
+
+* {
+    scrollbar-color: colors.$dark colors.$light;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color:  colors.$light;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: colors.$dark;
+}

@@ -2,12 +2,9 @@
 @use "../utils/media-queries";
 
 body {
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: colors.$pink;
-    color: colors.$purple;
+    background-color: colors.$background-color-body;
+    background-image: url("../../pattern.jpg");
+    color: colors.$dark;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-size: .75em;
@@ -22,6 +19,10 @@ body {
 
     @media (min-aspect-ratio: media-queries.$min-aspect) {
         font-size: .4em;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        right: 0;
 
         @media (min-width: 375px) {
             font-size: .7em;

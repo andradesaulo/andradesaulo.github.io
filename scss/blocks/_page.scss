@@ -1,12 +1,12 @@
 @use "../utils/media-queries";
 
 .page {
-    overflow-x: scroll;
     display: flex;
     flex-direction: column;
-    height: 100%;
     
     @media (min-aspect-ratio: media-queries.$min-aspect) {
+        height: 100%;
+        overflow-x: scroll;
         flex-direction: row;
     }
     

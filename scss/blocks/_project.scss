@@ -6,8 +6,9 @@
     position: relative;
     @include border-props.border();
     height: 6em;
-    width: 70%;
+    width: 85%;
     transition: height 1s;
+    background-color: colors.$light;
     
     &__link {
         text-decoration: underline;
@@ -15,6 +16,7 @@
 
     &__p {
         display: none;
+        font-size: 1.2em;
     }
      
     &__title {
@@ -38,13 +40,15 @@
     
     &[opened] {
         height: 25em;   
-        background-color: colors.$purple;
+        background-color: colors.$dark;
+        color: colors.$light;
     }
 
     &[opened] &__p {
         display: inline-block;
         font-weight: 500;
         padding-left: 10%;
+        color: colors.$background-color-body;
     }
     
     &[opened] &__img {
@@ -56,7 +60,6 @@
     &[opened] &__description {
         height: 100%;
         padding: 1em;
-        color: colors.$pink;
     }
     
     &__link[opened] {
@@ -64,7 +67,7 @@
     }
 
     &[opened] &__opener {
-        color: colors.$pink;
+        color: colors.$dark;
         transform: rotate(45deg);
         transition: transform 1s;
     }
@@ -107,7 +110,6 @@
         &[opened] &__description {
             width: 50%;
             padding: 1.7em;
-            color: colors.$pink;
             transition: padding 1s;
         }
     }

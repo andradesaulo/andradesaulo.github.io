@@ -2,7 +2,7 @@
 
 $border-width: 2px;
 @mixin border($type: normal) {
-    $props: 2px solid colors.$purple;
+    $props: 2px solid colors.$dark;
     @if $type == normal {
         border: $props;
     } @else if $type == top {
@@ -14,7 +14,7 @@ $border-width: 2px;
     } @else if $type == bottom {
         border-bottom: $props;
     } @else if $type == color {
-        border-color: colors.$purple;
+        border-color: colors.$dark;
     } @else if $type == width {
         border-width: $border-width;
     } @else {

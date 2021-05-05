@@ -6,7 +6,7 @@
     padding: 1.7em;
     @include border-props.border();
     min-width: 40%;
-    color: colors.$purple;
+    background-color: colors.$light;
     
     &__title {
         padding-bottom: 2.5vh;
